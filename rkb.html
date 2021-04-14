@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid2.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style_sub.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link rel="icon" href="resources/img/logo_size.jpg" type="image/gif" sizes="30*30"> 
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>Chapo-ASAP</title>
+    </head>
+    <body>
+        <header id="header-2">
+            
+            <div class="hero-text-box">
+                <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
+                <a class="diff_btn diff_btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+                <a class="diff_btn diff_btn-ghost js--scroll-to-start" href="#">Show me more</a>
+            </div>
+            
+        </header>
+
+        
+        <div class="sticky">
+            <h3 id="spech3"> Total = Rs <span class="Total_val">0</span></h3>
+            <div>
+                <form action="https://chapo-asap.000webhostapp.com/done.php" method="POST">
+                    <input type="hidden"  name="cash" id="xyz" value="">
+                    <input class="diff_btn diff_btn-full" id="to_bill"  type="submit" value="Pay!">  
+                  </form>
+               
+                  
+
+            </div>
+        </div>
+        
+
+        <section class="section-features js--section-features" id="features">
+            <div class="row">
+                <h2>Get food fast &mdash; not fast food</h2>
+                <p class="long-copy">
+                    Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!
+                </p>
+            </div>
+            
+            
+            <div class="row js--wp-1">
+                <div class="col span-1-of-2 box">
+                    <div class="pic">
+                        <img src="./resources/img/spring_rolls.jpg" alt="Spring Roll">
+                    </div>
+                    <div>
+                        <h3 class="dish_name" id="dish_name-0"> Spring Roll (1 plate)</h3>
+                        <h3> Price : Rs<span class="dish_price" id="dish_price-0">20</span></h3>
+                        <h4>Quantity</h4>
+                    </div>
+                    <br>
+                    <form id='myform1' method='POST' action='#'>
+                        <input type='button' value='-' class='qtyminus' field='quantity' />
+                        <input type='number' min='0'  name='quantity' value='0' class='qty-0' oninput="this.value = 
+                        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"> 
+                        <input type='button' value='+' class='qtyplus' field='quantity' />
+                    </form>
+
+                </div>
+                <div class="col span-1-of-2 box">
+                    <div class="pic">
+                        <img src="./resources/img/samosa.jpg" alt="Samosa">
+                    </div>
+                    <div>
+                        <h3 class="dish_name" id="dish_name-1"> Samosa (1 piece)</h3>
+                        <h3> Price : Rs<span class="dish_price" id="dish_price-1">10</span></h3>
+                        <h4>Quantity</h4>
+                    </div>
+                    <br>
+                    <form id='myform2' method='POST' action='#'>
+                        <input type='button' value='-' class='qtyminus' field='quantity1' />
+                        <input type='number' min='0' name='quantity1' value='0' class='qty-1' oninput="this.value = 
+                        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"> 
+                        <input type='button' value='+' class='qtyplus' field='quantity1' />
+                    </form>
+                </div>   
+            </div>   
+
+            <div class="row js--wp-1">
+                <div class="col span-1-of-2 box">
+                    <div class="pic">
+                        <img src="./resources/img/paneer_slices.jpg" alt="Paneer slices">
+                    </div>
+                    <div>
+                        <h3 class="dish_name" id="dish_name-2"> Paneer Manchurian (1 plate)</h3>
+                        <h3> Price : Rs<span class="dish_price" id="dish_price-2">80</span></h3>
+                        <h4>Quantity</h4>
+                    </div>
+                    <br>
+                    <form id='myform2' method='POST' action='#'>
+                        <input type='button' value='-' class='qtyminus' field='quantity2' />
+                        <input type='number' min='0' name='quantity2' value='0' class='qty-2' oninput="this.value = 
+                        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+                        <input type='button' value='+' class='qtyplus' field='quantity2' />
+                    </form>
+
+                </div>
+                <div class="col span-1-of-2 box">
+                    <div class="pic">
+                        <img src="./resources/img/burger.jpg" alt="Burger">
+                    </div>
+                    <div>
+                        <h3 class="dish_name" id="dish_name-3"> Burger (1 piece)</h3>
+                        <h3> Price : Rs<span class="dish_price" id="dish_price-3">20</span></h3>
+                        <h4>Quantity</h4>
+                    </div>
+                    <br>
+                    <form id='myform2' method='POST' action='#'>
+                        <input type='button' value='-' class='qtyminus' field='quantity3' />
+                        <input type='number' min='0' name='quantity3' value='0' class='qty-3' oninput="this.value = 
+                        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+                        <input type='button' value='+' class='qtyplus' field='quantity3' />
+                    </form>
+                </div>   
+            </div>
+
+            <div class="row js--wp-1">
+                <div class="col span-1-of-2 box">
+                    <div class="pic">
+                        <img src="./resources/img/sandwich.jpg" alt="Sandwich">
+                    </div>
+                    <div>
+                        <h3 class="dish_name" id="dish_name-4"> Sandwich (1 plate)</h3>
+                        <h3> Price : Rs<span class="dish_price" id="dish_price-4">15</span></h3>
+                        <h4>Quantity</h4>
+                    </div>
+                    <br>
+                    <form id='myform2' method='POST' action='#'>
+                        <input type='button' value='-' class='qtyminus' field='quantity4' />
+                        <input type='number' min='0' name='quantity4' value='0' class='qty-4' oninput="this.value = 
+                        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+                        <input type='button' value='+' class='qtyplus' field='quantity4' />
+                    </form>
+
+                </div>
+                <div class="col span-1-of-2 box">
+                    <div class="pic">
+                        <img src="./resources/img/omelette.jpg" alt="Omelette">
+                    </div>
+                    <div>
+                        <h3 class="dish_name" id="dish_name-5"> Omelette (1 piece)</h3>
+                        <h3> Price : Rs<span class="dish_price" id="dish_price-5">12</span></h3>
+                        <h4>Quantity</h4>
+                    </div>
+                    <br>
+                    <form id='myform2' method='POST' action='#'>
+                        <input type='button' value='-' class='qtyminus' field='quantity5' />
+                        <input type='number' min='0' name='quantity5' value='0' class='qty-5' oninput="this.value = 
+                        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+                        <input type='button' value='+' class='qtyplus' field='quantity5' />
+                    </form>
+                </div>   
+            </div>
+
+            <div class="row js--wp-1">
+                <div class="col span-1-of-2 box">
+                    <div class="pic">
+                        <img src="./resources/img/maggi.jpg" alt="maggi">
+                    </div>
+                    <div>
+                        <h3 class="dish_name" id="dish_name-6"> Maggi (1 piece)</h3>
+                        <h3> Price : Rs<span class="dish_price" id="dish_price-6">20</span></h3>
+                        <h4>Quantity</h4>
+                    </div>
+                    <br>
+                    <form id='myform2' method='POST' action='#'>
+                        <input type='button' value='-' class='qtyminus' field='quantity6' />
+                        <input type='number' min='0' name='quantity6' value='0' class='qty-6' oninput="this.value = 
+                        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+                        <input type='button' value='+' class='qtyplus' field='quantity6' />
+                    </form>
+
+                </div>
+                <div class="col span-1-of-2 box">
+                    <div class="pic">
+                        <img src="./resources/img/coffee.jpg" alt="coffee">
+                    </div>
+                    <div>
+                        <h3 class="dish_name" id="dish_name-7"> Coffee (1 Glass)</h3>
+                        <h3> Price : Rs<span class="dish_price" id="dish_price-7">20</span></h3>
+                        <h4>Quantity</h4>
+                    </div>
+                    <br>
+                    <form id='myform2' method='POST' action='#'>
+                        <input type='button' value='-' class='qtyminus' field='quantity7' />
+                        <input type='number' min='0' name='quantity7' value='0' class='qty-7' oninput="this.value = 
+                        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+                        <input type='button' value='+' class='qtyplus' field='quantity7' />
+                    </form>
+                </div>   
+            </div>
+
+            <div class="row js--wp-1">
+                <div class="col span-1-of-2 box">
+                    <div class="pic">
+                        <img src="./resources/img/oreo_shake.jpg" alt="Oreo Shake">
+                    </div>
+                    <div>
+                        <h3 class="dish_name" id="dish_name-8"> Oreo Shake (1 Glass)</h3>
+                        <h3> Price : Rs<span class="dish_price" id="dish_price-8">20</span></h3>
+                        <h4>Quantity</h4>
+                    </div>
+                    <br>
+                    <form id='myform2' method='POST' action='#'>
+                        <input type='button' value='-' class='qtyminus' field='quantity8' />
+                        <input type='number' min='0' name='quantity8' value='0' class='qty-8' oninput="this.value = 
+                        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+                        <input type='button' value='+' class='qtyplus' field='quantity8' />
+                    </form>
+
+                </div>
+                <div class="col span-1-of-2 box">
+                    <div class="pic">
+                        <img src="./resources/img/paratha.jpg" alt="Paratha">
+                    </div>
+                    <div>
+                        <h3 class="dish_name" id="dish_name-9"> Paratha </h3>
+                        <h3> Price: Rs <span class="dish_price" id="dish_price-9">15</span></h3>
+                        <h4>Quantity</h4>
+                    </div>
+                    <br>
+                    <form id='myform2' method='POST' action='#'>
+                        <input type='button' value='-' class='qtyminus' field='quantity9' />
+                        <input type='number' min='0' name='quantity9' value='0' class='qty-9' oninput="this.value = 
+                        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+                        <input type='button' value='+' class='qtyplus' field='quantity9' />
+                    </form>
+                </div>   
+                <div>
+                    
+                        <input type="button" class="confirm"  value="Finalize" />
+                        
+                    
+                    
+                </div>
+            </div>
+
+            
+
+        </section>
+        
+        
+
+        <section class="section-plans js--section-plans" id="plans">
+            <div class="row">
+                <h2>Bill</h2>
+            </div>
+            <div class="row">
+                
+                    <div class="plan-box js--wp-4">
+                        <div class="billList">
+                            <div class="row">
+                                <div class="col span-1-of-2 box">
+                                    <h4>Item</h4>
+                                </div>
+                                <div class="col span-1-of-2 box">
+                                    <h4> Quantity</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col span-1-of-2 box">
+                                    <div id="item_0"><i class="ion-ios-checkmark-empty icon-small"></i>Spring Roll</div>
+                                </div>
+                                <div class="col span-1-of-2 box">
+                                    <div id="quantity_0">0</div>
+                                </div>
+                            </div>
+                                
+                            <div class="row">
+                                <div class="col span-1-of-2 box">
+                                    <div id="item_1"><i class="ion-ios-checkmark-empty icon-small"></i>Samosa</div>
+                                </div>
+                                <div class="col span-1-of-2 box">
+                                    <div id="quantity_1">0</div>
+                                </div>
+                            </div>
+                                
+                            <div class="row">
+                                <div class="col span-1-of-2 box">
+                                    <div id="item_2"><i class="ion-ios-checkmark-empty icon-small"></i>Paneer Manchurian</div>
+                                </div>
+                                <div class="col span-1-of-2 box">
+                                    <div id="quantity_2">0</div>
+                                </div>
+                            </div>
+                                
+                            <div class="row">
+                                <div class="col span-1-of-2 box">
+                                    <div id="item_3"><i class="ion-ios-checkmark-empty icon-small"></i>Burger</div>
+                                </div>
+                                <div class="col span-1-of-2 box">
+                                    <div id="quantity_3">0</div>
+                                </div>
+                            </div>
+
+                                
+
+                                <div class="row">
+                                    <div class="col span-1-of-2 box">
+                                        <div id="item_4"><i class="ion-ios-checkmark-empty icon-small"></i>Sandwich</div>
+                                    </div>
+                                    <div class="col span-1-of-2 box">
+                                        <div id="quantity_4">0</div>
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="row">
+                                    <div class="col span-1-of-2 box">
+                                        <div id="item_5"><i class="ion-ios-checkmark-empty icon-small"></i>Omelette</div>
+                                    </div>
+                                    <div class="col span-1-of-2 box">
+                                        <div id="quantity_5">0</div>
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="row">
+                                    <div class="col span-1-of-2 box">
+                                        <div id="item_6"><i class="ion-ios-checkmark-empty icon-small"></i>Maggi</div>
+                                    </div>
+                                    <div class="col span-1-of-2 box">
+                                        <div id="quantity_6">0</div>
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="row">
+                                    <div class="col span-1-of-2 box">
+                                        <div id="item_7"><i class="ion-ios-checkmark-empty icon-small"></i>Coffee</div>
+                                    </div>
+                                    <div class="col span-1-of-2 box">
+                                        <div id="quantity_7">0</div>
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="row">
+                                    <div class="col span-1-of-2 box">
+                                        <div id="item_8"><i class="ion-ios-checkmark-empty icon-small"></i>Oreo Shake</div>
+                                    </div>
+                                    <div class="col span-1-of-2 box">
+                                        <div id="quantity_8">0</div>
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="row">
+                                    <div class="col span-1-of-2 box">
+                                        <div id="item_9"><i class="ion-ios-checkmark-empty icon-small"></i>Paratha</div>
+                                    </div>
+                                    <div class="col span-1-of-2 box">
+                                        <div id="quantity_9">0</div>
+                                    </div>
+                                </div>
+
+                            
+                        </div>
+
+                        <div>
+                            <h3>Subtotal : Rs <span class="main-subtotal">0</span></h3>
+                        </div>
+                        
+                        <div>
+                            <form action="https://chapo-asap.000webhostapp.com/done.php" method="POST">
+                                <input type="hidden"  name="cash" id="xyz" value="">
+                                <input class="diff_btn diff_btn-full" id="to_bill"  type="submit" value="Pay!">  
+                              </form>
+                              
+                                
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </section>
+        
+        
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    This webpage was created for the Syntax_Error
+                </p>
+                <p>
+                    Build with <i class="ion-ios-heart" style="color: #ea0000; padding: 0 3px;"></i> in the beautiful city of Lisbon, Portugal, March 2015.
+                </p>
+            </div>
+        </footer>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    <script src="resources/js/food.js"></script>
+    <script src="./resources/js/budget.js" type="text/javascript" onload="loaded=true;"></script>
+    </body>
+</html>

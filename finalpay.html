@@ -1,0 +1,33 @@
+<html>
+<button id="rzp-button1">Pay</button>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+var cookies = document.cookie.split(";").
+    map(function(el){ return el.split("="); }).
+    reduce(function(prev,cur){ prev[cur[0]] = cur[1];return prev },{});
+var options = {
+    "key": "rzp_test_adOLSxGnnZY8aO",
+    "currency": "INR",
+    "name": "Chapo-ASAP",
+    "description": "Test Transaction",
+    "image": "https://https://chapo-asap.000webhostapp.com/resources/img/logo_size.jpg",
+    "order_id":cookies[" order_id"],"callback_url": "https://chapo-asap.000webhostapp.com/done.php",
+    "prefill": {
+        "name": cookies[" name"],
+        "email": cookies[" id"],
+        "contact": cookies[" phone"]
+    },
+    "notes": {
+        "address": "IIT Roorkee"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+var rzp1 = new Razorpay(options);
+document.getElementById('rzp-button1').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+</script>
+</html>

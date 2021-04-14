@@ -1,0 +1,72 @@
+.row1 {
+	max-width: 114rem;
+	margin: 0 auto;
+}
+
+.row1:not(:last-child) {
+	margin-bottom: 8rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+	.row1:not(:last-child) {
+		margin-bottom: 6rem;
+	}
+}
+
+@media only screen and (max-width: 56.25em) {
+	.row1 {
+		max-width: 50rem;
+		padding: 0 3rem;
+	}
+}
+
+.row1::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row1 [class^="col-"] {
+	float: left;
+}
+
+.row1 [class^="col-"]:not(:last-child) {
+	margin-right: 6rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+	.row1 [class^="col-"]:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 6rem;
+	}
+}
+
+@media only screen and (max-width: 56.25em) {
+	.row1 [class^="col-"] {
+		width: 100% !important;
+	}
+}
+
+.row1 .col-1-of-2 {
+	width: calc((100% - 6rem) / 2);
+}
+
+.row1 .col-1-of-3 {
+	width: calc((100% - 2 * 6rem) / 3);
+}
+
+.row1 .col-2-of-3 {
+	width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+}
+
+.row1 .col-1-of-4 {
+	width: calc((100% - 3 * 6rem) / 4);
+}
+
+.row1 .col-2-of-4 {
+	width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+}
+
+.row1 .col-3-of-4 {
+	width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+}
