@@ -21,7 +21,7 @@ curl_setopt($ch,CURLOPT_POST, true);
 curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
 $headers = array(
     'content-type:application/x-www-form-urlencoded',
-    'Authorization:Basic cnpwX3Rlc3RfYWRPTFN4R25uWlk4YU86bnhqWlYyTm1sMDR1dnZJTkp5UDVtOTVT',
+    'Authorization:Basic <your token>',
 );
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
